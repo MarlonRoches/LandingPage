@@ -1,15 +1,14 @@
 
  const Constants = {
-    TypicalLoopTime: 3500,
+    TypicalLoopTime: 1500,
     loop: Infinity,
-    Front:"Full-Stack Developer",
+    Front:"Full-Stack",
     Back:"Marlon Roches",
     Engineer:"Software Engineer",
-    Resume:`Systems Engineering student and software developer with more than 4 years developing and 1 year developing professionally, working with agile methodologies (SCRUM).
-    Experienced in the design and maintenance of Databases (SQL and No SQL).
-    Back-End and Front-End development with .Net and Javascript.
-    
-    Main Languages: C#, Javascript, Python
+    Resume:`Systems Engineering student and software developer with more than 7 years developing and 3 year professionally, working with agile methodologies.
+    Experienced in the design and maintenance of Databases.`,
+
+    Languages:`Main Languages: C#, Javascript, Python
     Secondary Languages: Java, Flutter (Dart).`
     
     ,

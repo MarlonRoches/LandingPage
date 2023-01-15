@@ -1,8 +1,9 @@
 import "../styles/Header.scss"
-import logo from "../images/Roches white.png"
+import logo from "../images/RochesSoft_white.png"
+import RSlogo from "../images/RS White.png"
 import menuIcon from "../images/assets/whiteMenu.png"
 import Menu from "./HeaderComponents/Menu";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 
 function Header(params) {
     const [windowSize, setWindowSize] = useState([
@@ -28,15 +29,21 @@ function Header(params) {
             return <MenuDesplegable/>
         }
       }
+      function logoSelector(){
+        if (windowSize[0]> 900) {
+            return <img src={logo} alt="Mi logo"/>
+        } else {
+          return <img src={RSlogo} alt="Mi logo"/>
+        }
+      }
     return (<>
     <section>
         <div className="headerContainer">
             <header>
-               <img src={logo} alt="Mi logo"/>
+               {logoSelector()}
                {/* <p>Width: {windowSize[0]}</p>
                <p>Height: {windowSize[1]}</p> */}
-      {menuSelector()}
-     
+              {menuSelector()}
             </header>
         </div>
     </section>

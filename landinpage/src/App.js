@@ -23,7 +23,7 @@ function App() {
         {/* <Route path="/cupcackes" element={<Cupcackes peticion="cupcakes" title/>}/>
         <Route path="/nosotros" element={<About/>}/>
         <Route index path="/" element={<Home/>}/> */}
-        <Route path="*" element={<h1>No Match</h1>} />
+        <Route path="*"  element={<Home/>} />
       </Routes>
 
     <Footer/>

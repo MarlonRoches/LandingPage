@@ -1,5 +1,5 @@
 @import "../global.scss";
-$padding-from-header:50px;
+$padding-from-header:70px;
 .HomeSection{
     padding-top: $padding-header;
     width: 100%;
@@ -23,9 +23,9 @@ $padding-from-header:50px;
 .BackgoundGif{
     position: absolute;
     width: 100%;
-    height: auto;
+    height: 100%;
     opacity: 0.5;
-   img{ object-fit:cover;}
+    img{ object-fit:cover;}
 
 }
 h1{
@@ -34,6 +34,7 @@ h1{
 }
 .ColorTitle{
     color: $orange;
+    font-size: 25px;
 }
 .HomeInfo{
     position: absolute;
@@ -67,13 +68,12 @@ h1{
 }
 .HomeText-Container{
     padding-top: $padding-from-header;
-    padding-left: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
     // background-color: yellow;
 }
 
-.TypingText{
-    color: $white;
-}
+
 // FOTO
 .MyPhoto-Container{
     display: flex;
@@ -90,4 +90,76 @@ h1{
     // object-fit: cover;
 
 }
+
+
+// INFO
+
+.InfoText-Container{
+    display: flex;
+    flex-direction: column;
+    // align-items: c;
+    justify-content: right;
+    padding-top: $padding-from-header;
+    // padding-left: 150px;
+    // padding-right: 150px;
+    li{
+        color: $white;
+    }
+}
+
+.InfoImage-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: $padding-from-header;
+}
+.Arte1{
+    width:auto;
+    height:550px;
+        
+    object-fit: cover;
+
+}
+
+.WhiteTitle{
+    color: $white;
+    font-size: 30px; 
+}
+.ColorSubTitle{
+    color: $blue;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

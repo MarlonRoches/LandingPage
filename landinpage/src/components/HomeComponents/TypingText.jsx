@@ -1,8 +1,9 @@
 import Constants from "../../Helpers/Constants"
+import "../../styles/HomeStyles/HomeTextContent.scss"
 import Typical from "react-typical"
 function TypingText() {
     return(<>
-        <h1 className="TypingText"> <b>I Am </b></h1>
+        <span className="TypingText">I Am </span>
         <Typical className="TypingText"
                 steps={[
                     Constants.Engineer,
@@ -13,7 +14,7 @@ function TypingText() {
                     Constants.TypicalLoopTime,
                     ]}
                 loop={Constants.loop}
-                wrapper="h1"
+                wrapper="span"
             />
             </>
         )
