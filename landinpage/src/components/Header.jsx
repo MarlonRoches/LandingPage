@@ -4,13 +4,14 @@ import RSlogo from "../images/RS White.png"
 import menuIcon from "../images/assets/whiteMenu.png"
 import Menu from "./HeaderComponents/Menu";
 import { useEffect, useState } from "react";
+import Sidebar from "./Commons/Sidebar";
 
 function Header(params) {
     const [windowSize, setWindowSize] = useState([
         window.innerWidth,
         window.innerHeight,
       ]);
-    
+    const [sideShow, setsideShow] = useState(false)
       useEffect(() => {
         const handleWindowResize = () => {
           setWindowSize([window.innerWidth, window.innerHeight]);
@@ -36,6 +37,12 @@ function Header(params) {
           return <img src={RSlogo} alt="Mi logo"/>
         }
       }
+      function MenuDesplegable() {
+        return (<div className="MenuDesplegable-Container">
+            <img className="MenuDesplegable" src={menuIcon} alt="menu icon" onClick={()=>setsideShow(!sideShow)}/>
+            {sideShow ? <Sidebar/>:<></>}
+        </div>)
+    }
     return (<>
     <section>
         <div className="headerContainer">
@@ -50,9 +57,5 @@ function Header(params) {
     </>)
 }
 
-function MenuDesplegable() {
-    return (<div className="MenuDesplegable-Container">
-        <img className="MenuDesplegable" src={menuIcon} alt="menu icon"/>
-    </div>)
-}
+
 export default Header;

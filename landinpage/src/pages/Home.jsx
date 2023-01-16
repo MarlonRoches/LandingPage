@@ -36,7 +36,7 @@ function BackgoundGif(params) {
 function HomeText(params) {
     return(
         <div className="HomeText-Container"> 
-            <h1 className="ColorTitle">HI THERE</h1>
+            <h1 className="ColorTitle">HI THERE,</h1>
             <TypingText/>
             <p className="BoldText">{Constants.Resume}</p>
             <br/>
